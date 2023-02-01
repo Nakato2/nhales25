@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            jquery oefening
+        </title>
+    </head>
+    <body>
+
+        <p id="p1">
+            Hmm hier moet wat meer tekst bij..
+        </p>
+        <button id="knop">
+            Meer tekst...
+        </button>
+
+
+        <noscript>
+            Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#knop").click(function () {
+                    $("#p1").append("Oneindig meer tekst!! ");
+                });
+            });
+        </script>
+    </body>
+</html>
